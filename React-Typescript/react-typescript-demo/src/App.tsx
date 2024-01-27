@@ -6,6 +6,7 @@ import { PersonList } from "./components/PersonList";
 import { Status } from "./components/Status";
 import { Heading } from "./components/Heading";
 import { Oscar } from "./components/Oscar";
+import { Button } from "./components/Button";
 function App() {
   const personName = {
     first: "Troy",
@@ -37,6 +38,11 @@ function App() {
       <Oscar>
         <Heading> Oscar goes to Mexico</Heading>
       </Oscar>
+      <Button
+        handleClick={(event, id) => {
+          console.log("Button clicked", event, 1);
+        }}
+      ></Button>
     </div>
   );
 }
