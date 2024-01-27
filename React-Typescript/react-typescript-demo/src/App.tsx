@@ -7,6 +7,7 @@ import { Status } from "./components/Status";
 import { Heading } from "./components/Heading";
 import { Oscar } from "./components/Oscar";
 import { Button } from "./components/Button";
+import { Container } from "./components/Container";
 function App() {
   const personName = {
     first: "Troy",
@@ -43,8 +44,9 @@ function App() {
           console.log("Button clicked", event, 1);
         }}
       ></Button>
+      <Container styles={({border:'1px solid black', padding:'1rem',})}/>
     </div>
-  );
+  )
 }
 
 export default App;
